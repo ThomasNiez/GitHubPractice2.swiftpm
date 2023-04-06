@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SummaryView: View {
+    @Binding var MadLib: MadLib
     var body: some View {
-        Text("The \(adjective) \(noun) is \(verb)")
+        Text("The \(MadLib.adjective) \(MadLib.noun) is \(MadLib.verb)")
     }
 }
