@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AdjectiveView: View {
+    
     var body: some View {
         NavigationLink("Summary")  {
             SummaryView()
