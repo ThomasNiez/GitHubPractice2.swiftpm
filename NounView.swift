@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct NounView: View {
-    @State var MadLib: MadLib
+    @State var Madlib: MadLib = MadLib(noun: "", verb: "", adjective: "")
     
     var body: some View {
-        TextField("Enter a Noun", text: $MadLib.noun)
+        TextField("Enter a Noun", text: $Madlib.noun)
         NavigationLink("Verb")  {
-            VerbView(MadLib: $MadLib)
+            VerbView(MadLib: $Madlib)
         }
     }
 }
