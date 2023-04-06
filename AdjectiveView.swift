@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AdjectiveView: View {
+    @Binding var MadLib: MadLib
     var body: some View {
         NavigationLink("Summary")  {
             SummaryView()
